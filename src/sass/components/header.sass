@@ -4,6 +4,7 @@
     position: relative
     height: 112px
     background-color: #bd8ed2
+    z-index: 1
     &::after
         content: ''
         position: absolute
@@ -23,15 +24,20 @@
     margin-top: 24px
 .top-left
     display: flex
+    justify-content: space-around
+    transform: translate(27px, 43px)
 .logo
     position: absolute
     top: -24px
     right: 50%
-    transform: translateX(140px)
+    transform: translateX(146px)
+    z-index: 2
     img
         height: 167px 
         background-color: #fff  
-        border: 2px dashed #4058a6 
+        border: 2px dashed #4058a6
+.location
+    transform: translate(60px, 39px) 
 .menu
     margin-bottom: 28px
     ul
@@ -39,6 +45,7 @@
         justify-content: space-between
         list-style: none
         padding-left: 0
+        margin: 0
         li
             &:nth-child(2) a 
                 background-color: #d0db2a
@@ -51,9 +58,12 @@
         a 
             display: inline-block
             text-decoration: none
-            padding: 12px 52px
+            padding: 10px
+            width: 200px
+            text-align: center
             font-size: 24px
             font-weight: 700
+            letter-spacing: 1px
             border-radius: 10px
             background-color: #6ebd44
             color: #fff
@@ -67,10 +77,11 @@
         a
             display: inline-block
             position: relative
-            padding: 20px 100px 24px 20px
+            padding: 14px 100px 14px 20px
             font-size: 36px
-            color: #fff
             font-weight: 700
+            letter-spacing: 1px
+            color: #fff
             text-decoration: none
             border: 2px dashed #fdfdfd
             &::before
@@ -83,36 +94,55 @@
                 top: 15px           
     .cart
         display: flex
-    .search
-        line-height: 114px
-        form
-            position: relative
-            width: 282px
-            margin: 0 auto
-        input
-            background-color: #6ebd44
-            color: #fff
-            width: 100%
-            height: 32px
-            padding-left: 10px
-            border: 2px solid #fff
-            outline: none
-        button
-            position: absolute
-            top: 44px
-            right: 2px
-            width: 40px
-            height: 28px
-            border: none
-            border-left: 1px solid #fff
-            background: #6ebd44
-            cursor: pointer
-            &::before
-                content: ''
+        .basket
+            padding-top: 38px
+            a
+                display: inline-block
+                position: relative
+                padding-right: 72px
+                font-size: 16px
+                color: #fff
+                font-weight: 700
+                text-decoration: none
+                letter-spacing: 1px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 30px
+                    height: 30px
+                    top: -5px
+                    right: 30px
+                    background-image: url(../img/basket.png)
+        .search
+            padding-top: 34px
+            form
+                position: relative
+                width: 282px
+                margin: 0 auto
+            input
+                background-color: #6ebd44
+                color: #fff
+                width: 100%
+                height: 32px
+                padding-left: 10px
+                border: 2px solid #fff
+                outline: none
+            button
                 position: absolute
-                width: 21px
-                height: 21px
                 top: 2px
-                right: 8px
-                background-image: url(../img/dandruff.png)
+                right: 2px
+                width: 40px
+                height: 28px
+                border: none
+                border-left: 1px solid #fff
+                background: #6ebd44
+                cursor: pointer
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 21px
+                    height: 21px
+                    top: 3px
+                    right: 9px
+                    background-image: url(../img/dandruff.png)
 

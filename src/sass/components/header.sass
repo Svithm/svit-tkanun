@@ -1,0 +1,118 @@
+.header
+.top-line
+    margin-bottom: 58px
+    position: relative
+    height: 112px
+    background-color: #bd8ed2
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        top: 5px
+        border: 2px dashed #fff
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        bottom: 5px
+        border: 2px dashed #fff  
+.top
+    display: flex
+    justify-content: space-around
+    position: relative
+    margin-top: 24px
+.top-left
+    display: flex
+.logo
+    position: absolute
+    top: -24px
+    right: 50%
+    transform: translateX(140px)
+    img
+        height: 167px 
+        background-color: #fff  
+        border: 2px dashed #4058a6 
+.menu
+    margin-bottom: 28px
+    ul
+        display: flex
+        justify-content: space-between
+        list-style: none
+        padding-left: 0
+        li
+            &:nth-child(2) a 
+                background-color: #d0db2a
+            &:nth-child(3) a 
+                background-color: #ffcc02
+            &:nth-child(4) a 
+                background-color: #e78824
+            &:nth-child(5) a 
+                background-color: #ef4a23
+        a 
+            display: inline-block
+            text-decoration: none
+            padding: 12px 52px
+            font-size: 24px
+            font-weight: 700
+            border-radius: 10px
+            background-color: #6ebd44
+            color: #fff
+.header-bottom-line
+    background-color: #6ebd44
+    .wrraper
+        display: flex
+        justify-content: space-between
+    .fabric-catalog
+        margin: 12px 0 12px 0
+        a
+            display: inline-block
+            position: relative
+            padding: 20px 100px 24px 20px
+            font-size: 36px
+            color: #fff
+            font-weight: 700
+            text-decoration: none
+            border: 2px dashed #fdfdfd
+            &::before
+                content: ''
+                position: absolute
+                width: 65px
+                height: 49px
+                background-image: url(../img/cloth.svg)
+                right: 15px
+                top: 15px           
+    .cart
+        display: flex
+    .search
+        line-height: 114px
+        form
+            position: relative
+            width: 282px
+            margin: 0 auto
+        input
+            background-color: #6ebd44
+            color: #fff
+            width: 100%
+            height: 32px
+            padding-left: 10px
+            border: 2px solid #fff
+            outline: none
+        button
+            position: absolute
+            top: 44px
+            right: 2px
+            width: 40px
+            height: 28px
+            border: none
+            border-left: 1px solid #fff
+            background: #6ebd44
+            cursor: pointer
+            &::before
+                content: ''
+                position: absolute
+                width: 21px
+                height: 21px
+                top: 2px
+                right: 8px
+                background-image: url(../img/dandruff.png)
+

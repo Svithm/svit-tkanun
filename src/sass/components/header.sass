@@ -1,8 +1,9 @@
 .header
+    margin: 0 auto
 .top-line
+    margin-top: 30px
     margin-bottom: 58px
     position: relative
-    height: 112px
     background-color: #bd8ed2
     z-index: 1
     &::after
@@ -10,34 +11,51 @@
         position: absolute
         width: 100%
         top: 5px
-        border: 2px dashed #fff
+        border: 1px dashed #fff
     &::before
         content: ''
         position: absolute
         width: 100%
         bottom: 5px
-        border: 2px dashed #fff  
+        border: 1px dashed #fff  
 .top
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     position: relative
-    margin-top: 24px
-.top-left
-    display: flex
-    justify-content: space-around
-    transform: translate(27px, 43px)
-.logo
-    position: absolute
-    top: -24px
-    right: 50%
-    transform: translateX(146px)
-    z-index: 2
-    img
-        height: 167px 
-        background-color: #fff  
-        border: 2px dashed #4058a6
-.location
-    transform: translate(60px, 39px) 
+    padding: 40px 0 40px 0
+    .top-left
+        display: flex
+        justify-content: space-between
+        width: 470px
+        .lang
+            a
+                padding-right: 6px
+                font-size: 14px
+                letter-spacing: 1px
+                color: #fff
+                font-weight: 700
+                text-decoration: none
+                text-transform: uppercase
+            .ukr
+                padding: 4px
+                border: 1px dashed #fff
+            .rus
+                padding-left: 6px
+        .tel
+            padding-right: 50px
+    .logo
+        position: absolute
+        top: -30px
+        right: 50%
+        transform: translateX(148px)
+        z-index: 2
+        img
+            height: 167px 
+            background-color: #fff  
+            border: 2px dashed #4058a6
+    .location
+        width: 470px
+        text-align: center
 .menu
     margin-bottom: 28px
     ul
@@ -57,16 +75,20 @@
                 background-color: #ef4a23
         a 
             display: inline-block
-            text-decoration: none
+            position: relative
             padding: 10px
             width: 200px
             text-align: center
+            text-decoration: none
             font-size: 24px
             font-weight: 700
             letter-spacing: 1px
             border-radius: 10px
             background-color: #6ebd44
             color: #fff
+            z-index: 10
+            &:hover
+                transform: scale(1.1)
 .header-bottom-line
     background-color: #6ebd44
     .wrraper
@@ -91,11 +113,11 @@
                 height: 49px
                 background-image: url(../img/cloth.svg)
                 right: 15px
-                top: 15px           
+                top: 10px           
     .cart
         display: flex
         .basket
-            padding-top: 38px
+            padding-top: 41px
             a
                 display: inline-block
                 position: relative
@@ -110,7 +132,7 @@
                     position: absolute
                     width: 30px
                     height: 30px
-                    top: -5px
+                    top: -7px
                     right: 30px
                     background-image: url(../img/basket.png)
         .search
@@ -137,6 +159,8 @@
                 border-left: 1px solid #fff
                 background: #6ebd44
                 cursor: pointer
+                &:hover
+                    background: #fff
                 &::before
                     content: ''
                     position: absolute

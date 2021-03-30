@@ -6,18 +6,24 @@
     position: relative
     background-color: #bd8ed2
     z-index: 1
-    &::after
-        content: ''
-        position: absolute
-        width: 100%
-        top: 5px
-        border: 1px dashed #fff
     &::before
         content: ''
         position: absolute
         width: 100%
         bottom: 5px
-        border: 1px dashed #fff  
+        border-top: 2px dashed #fff
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        top: 5px
+        border-bottom: 2px dashed #fff  
+.line
+    padding-top: 5px
+    padding-bottom: 5px
+    height: 97px
+    border: 1px dashed #fff 
+
 .top
     display: flex
     justify-content: space-between
@@ -52,6 +58,14 @@
         z-index: 2
         a
             display: inline-block
+            &::before
+                content: ''
+                position: absolute
+                width: calc(100% - 22px);
+                height: 150px
+                border: 2px dashed #4058a6
+                top: 8px
+                left: 9px
         img
             height: 167px 
             background-color: #fff  
@@ -90,10 +104,13 @@
             background-color: #6ebd44
             color: #fff
             z-index: 10
+            transition: all 0.5s linear
             &:hover
                 transform: scale(1.1)
+                transition: all 0.5s linear
 .header-bottom-line
     background-color: #6ebd44
+    margin-bottom: 100px
     .wrraper
         display: flex
         justify-content: space-between

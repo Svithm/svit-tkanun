@@ -1,7 +1,7 @@
 .section
-    
 .product
     ul
+        margin: 0
         padding-left: 0
         list-style: none
         img
@@ -14,20 +14,25 @@
         flex-wrap: wrap
         form
             padding: 12px 0 30px 0
-        button
+        .button
             display: inline-block
-            padding: 12px
+            padding: 10px
             width: 100%
             font-size: 14px
             letter-spacing: 1px
-            line-height: 21px
             color: #fff
             font-family: "Inter"
             text-transform: uppercase
-            border: none
+            border: 3px solid #6ebd44
             border-radius: 10px
             background-color: #6ebd44
             cursor: pointer
+            &:hover
+                background-color: #fff
+                color: #6ebd44
+                border: 3px solid #6ebd44
+                transition: all 1s ease
+                
     .product-name
         margin: 0
     table
@@ -50,24 +55,6 @@
             &:last-child
         th
             border: 1px solid #6ebd44
-        // margin: 0
-        // margin-bottom: 10px
-        // .heading
-        //     width: calc(63% + 13px)
-        //     text-align: center
-        // .price
-        //     padding: 7px 7px 6px
-        //     font-size: 14px
-        //     border-left: none
-        // a
-        //     display: inline-block
-        //     padding: 4px
-        //     font-size: 18px
-        //     letter-spacing: 1px
-        //     color: #4281a4
-        //     text-transform: uppercase
-        //     text-decoration: none
-        //     border: 2px solid #6ebd44
     .product-character
         font-size: 14px
         font-weight: 600
@@ -75,3 +62,105 @@
         color: #4281a4
         li 
             line-height: 21px
+.pagination
+    padding: 50px 0
+    ul
+        display: flex
+        justify-content: center
+        margin: 0
+        padding: 0
+        list-style: none
+        li
+            padding-right: 18px
+            a
+                display: inline-block
+                position: relative
+                padding: 5px 10px
+                border: 2px solid #ffcc02
+                text-decoration: none
+                font-size: 16px
+                letter-spacing: 1px
+                color: #4281a4
+                font-weight: 600
+                transition: all .5s ease
+                &:hover
+                    background-color: #ffcc02
+                    color: #fff
+                    transition: all .5s ease
+                &:hover::before
+                     color: #fff                   
+            .arrow-left-2
+                width: 10px
+                height: 20px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 12px
+                    height: 12px
+                    border-top: 2px solid #6ebd44
+                    border-left: 2px solid #6ebd44
+                    transform: rotate(-45deg)
+                    top: 8px
+                    left: 8px
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 12px
+                    height: 12px
+                    border-top: 2px solid #6ebd44
+                    border-left: 2px solid #6ebd44
+                    transform: rotate(-45deg)
+                    top: 8px
+                    left: 16px
+            .arrow-left-1
+                width: 10px
+                height: 20px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 12px
+                    height: 12px
+                    border-top: 2px solid #6ebd44
+                    border-left: 2px solid #6ebd44
+                    transform: rotate(-45deg)
+                    top: 8px
+                    left: 11px
+            .arrow-right-1
+                width: 10px
+                height: 20px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 12px
+                    height: 12px
+                    border-top: 2px solid #6ebd44
+                    border-right: 2px solid #6ebd44
+                    transform: rotate(45deg)
+                    top: 8px
+                    right: 11px
+            .arrow-right-2
+                width: 10px
+                height: 20px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 12px
+                    height: 12px
+                    border-top: 2px solid #6ebd44
+                    border-right: 2px solid #6ebd44
+                    transform: rotate(45deg)
+                    top: 8px
+                    right: 8px
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 12px
+                    height: 12px
+                    border-top: 2px solid #6ebd44
+                    border-right: 2px solid #6ebd44
+                    transform: rotate(45deg)
+                    top: 8px
+                    right: 16px
+                &:hover::before
+                    border-top: 2px solid #fff
+                    border-right: 2px solid #fff         

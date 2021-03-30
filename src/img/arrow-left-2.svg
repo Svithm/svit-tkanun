@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+	<defs>
+		<image  width="18" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAAXNSR0IB2cksfwAAAQJQTFRFbr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ebr1Ef74OQgAAAFZ0Uk5TAC/CrQ4+y50r0v/cGzvPKtHmSjnf2zjnPOHdOinM603iPyPK8FI11+RCIsntUTLHVDPa4EC66kwW0MjlGtgwMdZEQTTV2eM9SDfe6SxJGUvo1MATT7Fqx9tqAAAA1ElEQVR4nD3PaVOCUBTGcVwqfSxNARekNLXEtRBLycA19/b6/l+lc7lHefOf+c0zcy6KIr9QOBIVPTk9Y4nFkTinXiSQlJK6RDpDVTXoWSlJ5ITkCzCKgZhXuC6JjY7yTSCVKmq31Ls6rEYgzRbaHWq3ftzco/1AtXtw+vLYI54GlKELLc8vesZIzF90eD7TeILylDqzMJmz+QuMxKGZg1ebzebjjSW8g2V70FbUdQ6LENtmK38ks4O7P+zIVOobmclWNBB/p358IsykrL6+f0R/tb9/gpMXCMRPRhQAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="сторінки">
+		<use id="Шар 11" href="#img1" x="0" y="0" />
+	</g>
+</svg>

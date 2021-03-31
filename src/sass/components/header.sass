@@ -1,7 +1,7 @@
 .header
     margin: 0 auto
 .top-line
-    margin-top: 30px
+    margin-top: 35px
     margin-bottom: 58px
     position: relative
     background-color: #bd8ed2
@@ -28,12 +28,12 @@
     display: flex
     justify-content: space-between
     position: relative
-    padding: 40px 0 40px 0
     .top-left
         display: flex
         justify-content: space-between
         width: 470px
         .lang
+            padding-top: 35px
             a
                 display: inline-block
                 padding-right: 6px
@@ -49,10 +49,12 @@
             .rus
                 padding-left: 6px
         .tel
-            padding-right: 50px
+            display: flex
+            flex-direction: column
+            padding: 20px 50px
     .logo
         position: absolute
-        top: -30px
+        top: -35px
         right: 50%
         transform: translateX(148px)
         z-index: 2
@@ -71,6 +73,7 @@
             background-color: #fff  
             border: 2px dashed #4058a6
     .location
+        padding-top: 37px
         width: 470px
         text-align: center
 .menu
@@ -114,82 +117,82 @@
     .wrraper
         display: flex
         justify-content: space-between
-    .fabric-catalog
-        margin: 12px 0 12px 0
+.fabric-catalog
+    margin: 12px 0 12px 0
+    a
+        display: inline-block
+        position: relative
+        padding: 14px 100px 14px 20px
+        font-size: 36px
+        font-weight: 700
+        letter-spacing: 1px
+        color: #fff
+        text-decoration: none
+        border: 2px dashed #fdfdfd
+        &::before
+            content: ''
+            position: absolute
+            width: 65px
+            height: 49px
+            background-image: url(../img/cloth.svg)
+            right: 15px
+            top: 10px           
+.cart
+    display: flex
+    .basket
+        padding-top: 41px
         a
             display: inline-block
             position: relative
-            padding: 14px 100px 14px 20px
-            font-size: 36px
-            font-weight: 700
-            letter-spacing: 1px
+            padding-right: 72px
+            font-size: 16px
             color: #fff
+            font-weight: 700
             text-decoration: none
-            border: 2px dashed #fdfdfd
+            letter-spacing: 1px
             &::before
                 content: ''
                 position: absolute
-                width: 65px
-                height: 49px
-                background-image: url(../img/cloth.svg)
-                right: 15px
-                top: 10px           
-    .cart
-        display: flex
-        .basket
-            padding-top: 41px
-            a
-                display: inline-block
-                position: relative
-                padding-right: 72px
-                font-size: 16px
+                width: 30px
+                height: 30px
+                top: -7px
+                right: 30px
+                background-image: url(../img/basket.png)
+    .search
+        padding-top: 34px
+        form
+            position: relative
+            width: 282px
+            margin: 0 auto
+        input
+            background-color: transparent
+            color: #fff
+            width: 100%
+            height: 32px
+            padding-left: 10px
+            border: 2px solid #fff
+            outline: none
+            &-webkit-input-placeholder
                 color: #fff
-                font-weight: 700
-                text-decoration: none
-                letter-spacing: 1px
-                &::before
-                    content: ''
-                    position: absolute
-                    width: 30px
-                    height: 30px
-                    top: -7px
-                    right: 30px
-                    background-image: url(../img/basket.png)
-        .search
-            padding-top: 34px
-            form
-                position: relative
-                width: 282px
-                margin: 0 auto
-            input
-                background-color: transparent
-                color: #fff
-                width: 100%
-                height: 32px
-                padding-left: 10px
-                border: 2px solid #fff
-                outline: none
-                &-webkit-input-placeholder
-                    color: #fff
-            button
+        button
+            position: absolute
+            top: 2px
+            right: 2px
+            width: 40px
+            height: 28px
+            border: none
+            border-left: 1px solid #fff
+            background: transparent
+            cursor: pointer
+            &:hover
+                background: #fff
+            &::before
+                content: ''
                 position: absolute
-                top: 2px
-                right: 2px
-                width: 40px
-                height: 28px
-                border: none
-                border-left: 1px solid #fff
-                background: transparent
-                cursor: pointer
-                &:hover
-                    background: #fff
-                &::before
-                    content: ''
-                    position: absolute
-                    width: 21px
-                    height: 21px
-                    top: 3px
-                    right: 9px
-                    background-image: url(../img/dandruff.png)
+                width: 21px
+                height: 21px
+                top: 3px
+                right: 9px
+                background-image: url(../img/dandruff.png)
 
 

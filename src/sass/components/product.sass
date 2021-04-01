@@ -1,4 +1,3 @@
-.section
 .product
     ul
         margin: 0
@@ -21,38 +20,37 @@
         border: 2px solid #6ebd44
         text-align: center
         border-collapse: collapse
-        th
-            a
-                text-decoration: none
-                color: #4281a4
-            &:first-child
-                font-size: 18px
-                text-transform: uppercase
-                width: 70%
-            &:last-child
-        th
-            border: 1px solid #6ebd44
+    th
+        a
+            text-decoration: none
+            color: #4281a4
+        &:first-child
+            font-size: 18px
+            text-transform: uppercase
+            width: 70%
+        &:last-child
+    th
+        border: 1px solid #6ebd44
     form
         padding: 12px 0 30px 0
-    .button
-        display: inline-block
-        padding: 10px
-        width: 100%
-        font-size: 14px
-        letter-spacing: 1px
-        color: #fff
-        font-family: "Inter"
-        text-transform: uppercase
+.button
+    display: inline-block
+    padding: 10px
+    width: 100%
+    font-size: 14px
+    letter-spacing: 1px
+    color: #fff
+    font-family: "Inter"
+    text-transform: uppercase
+    border: 3px solid #6ebd44
+    border-radius: 10px
+    background-color: #6ebd44
+    cursor: pointer
+    transition: all .3s ease
+    &:hover
+        background-color: #fff
+        color: #6ebd44
         border: 3px solid #6ebd44
-        border-radius: 10px
-        background-color: #6ebd44
-        cursor: pointer
-        transition: all .3s ease
-        &:hover
-            background-color: #fff
-            color: #6ebd44
-            border: 3px solid #6ebd44
-            transition: all .3s ease
 .product-character
     font-size: 14px
     font-weight: 600
@@ -62,118 +60,117 @@
         line-height: 21px
 .pagination
     padding: 50px 0
-    ul
-        display: flex
-        justify-content: center
-        margin: 0
-        padding: 0
-        list-style: none
-        li
-            padding-right: 18px
-            a
-                display: inline-block
-                position: relative
-                padding: 5px 10px
-                border: 2px solid #6ebd44
-                text-decoration: none
-                font-size: 16px
-                letter-spacing: 1px
-                color: #4281a4
-                font-weight: 600
-                transition: all .3s ease
-                &:hover
-                    background-color: #6ebd44
-                    color: #fff
-                    transition: all .25s ease
-                &:hover::before
-                        color: #fff                   
-            .arrow-left-2
-                width: 10px
-                height: 20px
-                &::before
-                    content: ''
-                    position: absolute
-                    width: 12px
-                    height: 12px
-                    border-top: 2px solid #6ebd44
-                    border-left: 2px solid #6ebd44
-                    transform: rotate(-45deg)
-                    top: 8px
-                    left: 8px
-                &::after
-                    content: ''
-                    position: absolute
-                    width: 12px
-                    height: 12px
-                    border-top: 2px solid #6ebd44
-                    border-left: 2px solid #6ebd44
-                    transform: rotate(-45deg)
-                    top: 8px
-                    left: 16px
-                &:hover::before
-                    border-top: 2px solid #fff
-                    border-left: 2px solid #fff
-                &:hover::after
-                    border-top: 2px solid #fff
-                    border-left: 2px solid #fff
-            .arrow-left-1
-                width: 10px
-                height: 20px
-                &::before
-                    content: ''
-                    position: absolute
-                    width: 12px
-                    height: 12px
-                    border-top: 2px solid #6ebd44
-                    border-left: 2px solid #6ebd44
-                    transform: rotate(-45deg)
-                    top: 8px
-                    left: 11px
-                &:hover::before
-                    border-top: 2px solid #fff
-                    border-left: 2px solid #fff
-            .arrow-right-1
-                width: 10px
-                height: 20px
-                &::before
-                    content: ''
-                    position: absolute
-                    width: 12px
-                    height: 12px
-                    border-top: 2px solid #6ebd44
-                    border-right: 2px solid #6ebd44
-                    transform: rotate(45deg)
-                    top: 8px
-                    right: 11px
-                &:hover::before
-                    border-top: 2px solid #fff
-                    border-right: 2px solid #fff
-            .arrow-right-2
-                width: 10px
-                height: 20px
-                &::before
-                    content: ''
-                    position: absolute
-                    width: 12px
-                    height: 12px
-                    border-top: 2px solid #6ebd44
-                    border-right: 2px solid #6ebd44
-                    transform: rotate(45deg)
-                    top: 8px
-                    right: 8px
-                &::after
-                    content: ''
-                    position: absolute
-                    width: 12px
-                    height: 12px
-                    border-top: 2px solid #6ebd44
-                    border-right: 2px solid #6ebd44
-                    transform: rotate(45deg)
-                    top: 8px
-                    right: 16px
-                &:hover::before
-                    border-top: 2px solid #fff
-                    border-right: 2px solid #fff
-                &:hover::after
-                    border-top: 2px solid #fff
-                    border-right: 2px solid #fff        
+.pag-list
+    display: flex
+    justify-content: center
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+        padding-right: 18px
+    a
+        display: inline-block
+        position: relative
+        padding: 5px 10px
+        border: 2px solid #6ebd44
+        text-decoration: none
+        font-size: 16px
+        letter-spacing: 1px
+        color: #4281a4
+        font-weight: 600
+        transition: all .3s ease
+        &:hover
+            background-color: #6ebd44
+            color: #fff
+        &:hover::before
+            color: #fff   
+.arrow-left-2
+    width: 10px
+    height: 20px
+    &::before
+        content: ''
+        position: absolute
+        width: 12px
+        height: 12px
+        border-top: 2px solid #6ebd44
+        border-left: 2px solid #6ebd44
+        transform: rotate(-45deg)
+        top: 8px
+        left: 8px
+    &::after
+        content: ''
+        position: absolute
+        width: 12px
+        height: 12px
+        border-top: 2px solid #6ebd44
+        border-left: 2px solid #6ebd44
+        transform: rotate(-45deg)
+        top: 8px
+        left: 16px
+    &:hover::before
+        border-top: 2px solid #fff
+        border-left: 2px solid #fff
+    &:hover::after
+        border-top: 2px solid #fff
+        border-left: 2px solid #fff
+.arrow-left-1
+    width: 10px
+    height: 20px
+    &::before
+        content: ''
+        position: absolute
+        width: 12px
+        height: 12px
+        border-top: 2px solid #6ebd44
+        border-left: 2px solid #6ebd44
+        transform: rotate(-45deg)
+        top: 8px
+        left: 11px
+    &:hover::before
+        border-top: 2px solid #fff
+        border-left: 2px solid #fff
+.arrow-right-1
+    width: 10px
+    height: 20px
+    &::before
+        content: ''
+        position: absolute
+        width: 12px
+        height: 12px
+        border-top: 2px solid #6ebd44
+        border-right: 2px solid #6ebd44
+        transform: rotate(45deg)
+        top: 8px
+        right: 11px
+    &:hover::before
+        border-top: 2px solid #fff
+        border-right: 2px solid #fff
+.arrow-right-2
+    width: 10px
+    height: 20px
+    &::before
+        content: ''
+        position: absolute
+        width: 12px
+        height: 12px
+        border-top: 2px solid #6ebd44
+        border-right: 2px solid #6ebd44
+        transform: rotate(45deg)
+        top: 8px
+        right: 8px
+    &::after
+        content: ''
+        position: absolute
+        width: 12px
+        height: 12px
+        border-top: 2px solid #6ebd44
+        border-right: 2px solid #6ebd44
+        transform: rotate(45deg)
+        top: 8px
+        right: 16px
+    &:hover::before
+        border-top: 2px solid #fff
+        border-right: 2px solid #fff
+    &:hover::after
+        border-top: 2px solid #fff
+        border-right: 2px solid #fff        

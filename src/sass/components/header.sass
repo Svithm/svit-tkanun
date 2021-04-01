@@ -27,60 +27,60 @@
     display: flex
     justify-content: space-between
     position: relative
-    .top-left
-        display: flex
-        justify-content: space-between
-        width: 470px
-        .lang
-            padding-top: 35px
-            a
-                display: inline-block
-                padding-right: 6px
-                font-size: 14px
-                letter-spacing: 1px
-                color: #fff
-                font-weight: 700
-                text-decoration: none
-                text-transform: uppercase
-            .ukr
-                padding: 4px
-                border: 1px dashed #fff
-            .rus
-                padding-left: 6px
-        .tel
-            display: flex
-            flex-direction: column
-            padding: 20px 50px
-            a
-                position: relative
-                text-decoration: none
-                letter-spacing: 1px
-                color: #fff
-                font-weight: 700
-    .logo
-        position: absolute
-        top: -35px
-        right: 50%
-        transform: translateX(148px)
-        z-index: 2
-        a
-            display: inline-block
-            &::before
-                content: ''
-                position: absolute
-                width: calc(100% - 22px)
-                height: 150px
-                border: 2px dashed #4058a6
-                top: 8px
-                left: 9px
-        img
-            height: 167px 
-            background-color: #fff  
+.top-left
+    display: flex
+    justify-content: space-between
+    width: 470px
+.lang
+    padding-top: 35px
+    a
+        display: inline-block
+        padding-right: 6px
+        font-size: 14px
+        letter-spacing: 1px
+        color: #fff
+        font-weight: 700
+        text-decoration: none
+        text-transform: uppercase
+.ukr
+    padding: 4px
+    border: 1px dashed #fff
+.rus
+        padding-left: 6px
+.tel
+    display: flex
+    flex-direction: column
+    padding: 20px 50px
+    a
+        position: relative
+        text-decoration: none
+        letter-spacing: 1px
+        color: #fff
+        font-weight: 700
+.logo
+    position: absolute
+    top: -35px
+    right: 50%
+    transform: translateX(148px)
+    z-index: 2
+    a
+        display: inline-block
+        &::before
+            content: ''
+            position: absolute
+            width: calc(100% - 22px)
+            height: 150px
             border: 2px dashed #4058a6
-    .location
-        padding-top: 37px
-        width: 470px
-        text-align: center
+            top: 8px
+            left: 9px
+    img
+        height: 167px 
+        background-color: #fff  
+        border: 2px dashed #4058a6
+.location
+    padding-top: 37px
+    width: 470px
+    text-align: center
 .menu
     margin-bottom: 28px
     ul
@@ -163,41 +163,41 @@
                 top: -7px
                 right: 30px
                 background-image: url(../img/basket.png)
-    .search
-        padding-top: 34px
-        form
-            position: relative
-            width: 282px
-            margin: 0 auto
-        input
-            background-color: transparent
+.search
+    padding-top: 34px
+    form
+        position: relative
+        width: 282px
+        margin: 0 auto
+    input
+        background-color: transparent
+        color: #fff
+        width: 100%
+        height: 32px
+        padding-left: 10px
+        border: 2px solid #fff
+        outline: none
+        &-webkit-input-placeholder
             color: #fff
-            width: 100%
-            height: 32px
-            padding-left: 10px
-            border: 2px solid #fff
-            outline: none
-            &-webkit-input-placeholder
-                color: #fff
-        button
+    button
+        position: absolute
+        top: 2px
+        right: 2px
+        width: 40px
+        height: 28px
+        border: none
+        border-left: 1px solid #fff
+        background: transparent
+        cursor: pointer
+        &:hover
+            background: #fff
+        &::before
+            content: ''
             position: absolute
-            top: 2px
-            right: 2px
-            width: 40px
-            height: 28px
-            border: none
-            border-left: 1px solid #fff
-            background: transparent
-            cursor: pointer
-            &:hover
-                background: #fff
-            &::before
-                content: ''
-                position: absolute
-                width: 21px
-                height: 21px
-                top: 3px
-                right: 9px
-                background-image: url(../img/dandruff.png)
+            width: 21px
+            height: 21px
+            top: 3px
+            right: 9px
+            background-image: url(../img/dandruff.png)
 
 

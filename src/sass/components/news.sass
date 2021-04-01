@@ -1,5 +1,6 @@
 .header-bottom-line-news
     background-color: #d0db2a
+    margin: 0
 .fabric-catalog-news
     a
         &::before
@@ -10,3 +11,96 @@
             background-image: url(../img/news.svg)
             right: 15px
             top: 10px
+.breadcrumbs
+    margin: 0
+    padding: 30px 0 18px 0
+    font-size: 18px
+    letter-spacing: 0px
+    color: #666666
+    font-weight: 700
+    span
+        color: #4281a4
+.news-content
+    display: flex
+    justify-content: space-between
+.box
+    text-align: center
+    border: 2px solid #d0db2a
+    transition: all 0.3s ease
+    &:hover
+        transform: scale(1.1)
+        
+    p
+        width: 330px
+    a
+        display: inline-block
+        padding: 10px 80px
+        font-size: 20px
+        letter-spacing: 1px
+        color: #4281a4
+        font-weight: 600
+        text-decoration: none
+        border: 3px solid #d0db2a
+        border-radius: 10px
+        transition: all 0.3s ease
+        &:hover
+            background-color: #d0db2a
+            color: #fff
+    img 
+        margin: 20px 26px
+        width: 276px
+    .detail
+        margin: 0
+        padding-bottom: 20px
+.news-title,
+.news-date
+    margin: 0
+    margin-top: 18px
+    padding: 8px 0
+    font-size: 20px
+    letter-spacing: 1px
+    color: #4281a4
+    font-weight: 600
+    background-color: #d0db2a
+.news-desc
+    margin: 0
+    padding: 18px 0
+    font-size: 18px
+    color: #666666
+    font-weight: 500
+    text-align: left
+.pagination
+    .pag-list-news
+        .arrow-left-2,
+        .arrow-left-1,
+            &::before
+                border-top: 2px solid #d0db2a
+                border-left: 2px solid #d0db2a
+            &::after
+                border-top: 2px solid #d0db2a
+                border-left: 2px solid #d0db2a
+            &:hover::before
+                border-top: 2px solid #fff
+                border-left: 2px solid #fff
+            &:hover::after
+                border-top: 2px solid #fff
+                border-left: 2px solid #fff
+        .arrow-right-2,
+        .arrow-right-1,
+            &::before
+                border-top: 2px solid #d0db2a
+                border-right: 2px solid #d0db2a
+            &::after
+                border-top: 2px solid #d0db2a
+                border-right: 2px solid #d0db2a
+            &:hover::before
+                border-top: 2px solid #fff
+                border-right: 2px solid #fff
+            &:hover::after
+                border-top: 2px solid #fff
+                border-right: 2px solid #fff       
+        a
+            border: 2px solid #d0db2a
+            &:hover
+                background-color: #d0db2a
+                color: #fff

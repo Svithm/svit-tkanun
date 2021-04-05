@@ -114,6 +114,25 @@
             top: -6px
             left: -28px
             background-image: url(../img/location.png)
+.burger
+    display: none
+    padding: 4px
+    width: 40px
+    height: 40px
+    background-color: #bd8ed2
+    border-radius: 5px
+    line-height: 0
+    box-sizing: border-box
+    text-align: center
+    span
+        display: inline-block
+        margin: 4px 0
+        height: 3px
+        width: 80%
+        background-color: #fff
+    @media screen and ( max-width: 1200px )
+        display: block
+        margin-bottom: 10px
 .menu
     margin-bottom: 28px
     ul
@@ -148,6 +167,9 @@
             transition: all .4s ease
             &:hover
                 transform: scale(1.06)
+    @media screen and ( max-width: 1200px )
+        display: none
+        
 .header-bottom-line
     background-color: #6ebd44
     margin-bottom: 100px
@@ -155,6 +177,8 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+        @media screen and ( max-width: 872px )
+            justify-content: center
 .fabric-catalog
     margin: 12px 0 12px 0
     a

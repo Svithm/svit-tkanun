@@ -17,7 +17,10 @@
         position: absolute
         width: 100%
         top: 5px
-        border-bottom: 2px dashed #fff  
+        border-bottom: 2px dashed #fff 
+    @media screen and ( max-width: 970px )
+         margin-top: 0
+         margin-bottom: 12px
 .line
     padding-top: 5px
     padding-bottom: 5px
@@ -27,12 +30,19 @@
     display: flex
     justify-content: space-between
     position: relative
+    @media screen and ( max-width: 970px )
+        flex-direction: column
+        align-items: center
 .top-left
     display: flex
     justify-content: space-between
     width: 470px
     @media screen and ( max-width: 1200px )
         justify-content: end
+    @media screen and ( max-width: 970px )
+        width: unset
+        flex-direction: column
+        align-items: center
         
 .lang
     padding-top: 35px
@@ -45,6 +55,8 @@
         font-weight: 700
         text-decoration: none
         text-transform: uppercase
+    @media screen and ( max-width: 970px )
+        padding-top: 14px
 .ukr
     padding: 4px
     border: 1px dashed #fff
@@ -67,10 +79,12 @@
                 content: ''
                 position: absolute
                 width: 14px
-                height: 24px
+                height: 22px
                 top: -1px
                 left: -24px
-                background-image: url(../img/tel.png)
+                background-image: url(../img/tel.svg)
+    @media screen and ( max-width: 970px )
+        padding: 20px 0 20px 25px 
 .logo
     position: absolute
     top: -35px
@@ -91,13 +105,22 @@
         height: 167px 
         background-color: #fff  
         border: 2px dashed #4058a6
+    @media screen and ( max-width: 970px )
+        padding-top: 20px
+        position: static
+        transform: translateX(0px)
+        order: -1
+        a
+            &::before
+                width: 276px
+                top: 28px
+        
 .location
     padding-top: 37px
     width: 470px
     text-align: center
     @media screen and ( max-width: 1200px )
         text-align: right
-        
     a
         display: inline-block
         position: relative
@@ -113,14 +136,16 @@
             height: 26px
             top: -6px
             left: -28px
-            background-image: url(../img/location.png)
+            background-image: url(../img/loc.svg)
+    @media screen and ( max-width: 970px )
+        width: unset
+        padding: 0 0 20px 30px
 .burger
     display: none
     padding: 4px
     width: 40px
     height: 40px
     background-color: #bd8ed2
-    border-radius: 5px
     line-height: 0
     box-sizing: border-box
     text-align: center
@@ -284,5 +309,9 @@
             top: 3px
             right: 9px
             background-image: url(../img/dandruff.png)
+.items-cart
+    img
+        width: 150px
+        height: 150px
 
 

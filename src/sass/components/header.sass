@@ -177,7 +177,7 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        @media screen and ( max-width: 872px )
+        @media screen and ( max-width: 892px )
             justify-content: center
 .fabric-catalog
     margin: 12px 0 12px 0
@@ -198,9 +198,20 @@
             height: 49px
             background-image: url(../img/cloth.svg)
             right: 15px
-            top: 10px           
+            top: 10px 
+    @media screen and ( max-width: 872px )
+        a
+            padding: 5px 100px 5px 30px
+            &::before
+                top: 2px
+    @media screen and ( max-width: 450px )
+        a
+            padding: 0 100px 0 30px
+            &::before
+                top: 18px
 .cart
     display: flex
+    // padding-left: 20px
     .basket
         padding-top: 41px
         a
@@ -220,6 +231,17 @@
                 top: -7px
                 right: 30px
                 background-image: url(../img/basket.png)
+    @media screen and ( max-width: 872px )
+        padding-bottom: 10px
+        .basket
+            padding-top: 8px
+    @media screen and ( max-width: 355px )
+        .basket    
+            a
+                padding-right: 24px
+                &::before
+                    display: none
+
 .search
     padding-top: 34px
     form
@@ -236,6 +258,11 @@
         outline: none
         &::-webkit-input-placeholder
             color: #fff
+    @media screen and ( max-width: 872px )
+        padding-top: 0
+    @media screen and ( max-width: 452px )
+        form
+            width: unset
 
     button
         position: absolute

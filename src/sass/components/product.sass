@@ -67,6 +67,7 @@
 .pag-list
     display: flex
     justify-content: center
+    flex-wrap: wrap
     margin: 0
     padding: 0
     list-style: none
@@ -88,6 +89,9 @@
             color: #fff
         &:hover::before
             color: #fff   
+    @media screen and ( max-width: 494px )
+        li
+            padding-bottom: 10px
 .arrow-left-2
     width: 10px
     height: 20px

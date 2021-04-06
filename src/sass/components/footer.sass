@@ -18,9 +18,22 @@
     p
         margin: 0
         padding: 46px 0
+        text-align: center
     .wrraper
         display: flex
         justify-content: space-between
+        align-items: center
+    @media screen and ( max-width: 856px )
+        .wrraper
+            flex-direction: column
+        p 
+            padding: 0
+        .working-time
+            padding-top: 10px
+        .location
+            padding: 10px 0
+        .tel
+            padding-bottom: 10px
     
 .working-time
     font-size: 18px

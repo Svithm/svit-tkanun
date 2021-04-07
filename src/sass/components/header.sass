@@ -309,9 +309,195 @@
             top: 3px
             right: 9px
             background-image: url(../img/dandruff.png)
-.items-cart
+
+.items-cart 
+    // display: none
+
+.basket-title
+    background-color: #6ebd44
+    h2
+        margin: 0
+        padding: 28px 0
+        font-size: 36px
+        letter-spacing: 1px
+        color: #fff
+        font-weight: 700
+        text-align: center
+
+.content-wrraper
+    &::-webkit-scrollbar
+        width: 10px
+    &::-webkit-scrollbar-track
+        background: #f1f1f1
+    &::-webkit-scrollbar-track
+    &::-webkit-scrollbar-track-piece
+    &::-webkit-scrollbar-thumb
+        border-radius: 2px
+        background-color: #d1d1d1
+    &::-webkit-scrollbar-corner
+    &::-webkit-resizer
+
+.basket-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 16px 0
+    position: relative
     img
         width: 150px
         height: 150px
+    p
+        margin: 0
+    a
+        display: inline-block
+    &::-webkit-scrollbar
+        width: 7px
+        background-color: #f9f9fd
+
+.basket-desc
+    height: 163px
+    h4
+        margin: 0
+        font-size: 30px
+        letter-spacing: 1px
+        color: #4281a4
+        font-weight: 400
+    ul
+        padding: 0
+        font-size: 14px
+        letter-spacing: 0px
+        color: #4281a4
+        font-weight: 500
+        list-style: none
+.col
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 464px
+
+.bin
+    img
+        width: 27px
+        height: 29px
+    a
+        display: inline-block
+
+.basket-price
+    font-size: 30px
+    letter-spacing: 1px
+    color: #4281a4
+    font-weight: 700
+.product-cheking
+    display: flex
+.basket-button
+    position: relative
+    width: 30px
+    height: 30px
+    background-color: #fff
+    border: 2px solid #6ebd44
+    outline: none
+    &:hover
+        background-color: #6ebd44
+    &:hover::before,
+    &:hover::after
+        background-color: #fff
+        
+.minus
+    &::before
+        content: ''
+        position: absolute
+        width: 10px
+        height: 2px
+        top: 12px
+        left: 8px
+        background-color: #548bab
+.plus
+    &::before
+        content: ''
+        position: absolute
+        width: 2px
+        height: 10px
+        top: 8px
+        left: 12px
+        background-color: #548bab
+    &::after
+        content: ''
+        position: absolute
+        width: 10px
+        height: 2px
+        top: 12px
+        left: 8px
+        background-color: #548bab
+.custom-input
+    margin: 0 18px
+    width: 42px
+    height: 24px
+    border: 2px solid #6ebd44
+    color: #548bab
+    text-align: center
+    outline: none
+
+.order-price
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding: 50px 0 25px 0
+    transform: translateX(-100px)
+    h4
+        margin: 0
+        font-size: 24px
+        letter-spacing: 1px
+        color: #4281a4
+        font-weight: 700
+        text-align: center
+    p 
+        margin: 0
+
+.basket-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 50px
+
+.turn-back
+    a
+        padding: 12px
+        font-size: 14px
+        letter-spacing: 0px
+        color: #4281a4
+        font-weight: 500
+        text-decoration: none
+        border: 1px solid #6ebd44
+        border-radius: 5px
+        transition: all .5s ease
+        &:hover
+            color: #fff
+            background-color: #6ebd44
+
+.place-order
+    transform: translateX(-100px)
+    .col
+        justify-content: center
+    a
+        display: inline-block
+        padding: 14px 0
+        width: 100%
+        font-size: 24px
+        letter-spacing: 1px
+        color: #fff
+        font-weight: 700
+        background-color: #6ebd44
+        border: 2px solid #6ebd44
+        border-radius: 10px
+        text-decoration: none
+        text-transform: uppercase
+        text-align: center
+        transition: all .5s ease
+        &:hover
+            color: #6ebd44
+            background-color: #fff
+            border: 2px solid #6ebd44
+
+
 
 

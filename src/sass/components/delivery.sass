@@ -11,6 +11,9 @@
             background-image: url(../img/delivery.svg)
             right: 15px
             top: 10px
+    .fabric-catalog
+        a
+            padding: 14px 162px 14px 20px
 .delivery-content
     p 
         margin: 0
@@ -22,6 +25,13 @@
     .text-bottom
         margin-bottom: 50px
     .delivery-company
-        display: flex
         margin: 90px 0
+        display: flex
         justify-content: space-between
+        flex-wrap: wrap
+        img
+            padding: 20px 20px 20px 0
+            &:last-child
+                padding-right: 0
+        @media screen and ( max-width: 1000px )
+            justify-content: space-around

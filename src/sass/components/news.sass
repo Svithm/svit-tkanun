@@ -1,6 +1,7 @@
 .header-bottom-line-news
     background-color: #d0db2a
     margin: 0
+
 .fabric-catalog-news
     a
         &::before
@@ -15,18 +16,23 @@
         margin: 0
     span
         color: #4281a4
+    .fabric-catalog
+        a
+            padding: 14px 162px 14px 20px
+
 .news-content
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
+    @media screen and ( max-width: 1041px )
+        justify-content: center
 .box
     text-align: center
     border: 2px solid #d0db2a
+    width: 330px
     transition: all 0.3s ease
     &:hover
         transform: scale(1.02)
-        
-    p
-        width: 330px
     a
         display: inline-block
         padding: 10px 80px
@@ -41,12 +47,27 @@
         &:hover
             background-color: #d0db2a
             color: #fff
+        @media screen and ( max-width: 360px )
+            padding: 10px 60px
     img 
+        display: block
         margin: 20px 26px
         width: 276px
+        height: 240px
+        @media screen and ( max-width: 360px )
+            margin: 0
+            width: 100%
+            height: auto
+        
     .detail
         margin: 0
         padding-bottom: 20px
+    @media screen and ( max-width: 1050px )
+        margin: 10px
+    @media screen and ( max-width: 360px )
+        width: 100%
+    
+
 .news-title,
 .news-date
     margin: 0
@@ -59,7 +80,7 @@
     background-color: #d0db2a
 .news-desc
     margin: 0
-    padding: 18px 0
+    padding: 18px 15px
     font-size: 18px
     color: #666666
     font-weight: 500
@@ -68,25 +89,37 @@
 .news-page-cont
     h1 
         margin-bottom: 38px
+        @media screen and ( max-width: 1000px )
+            font-size: 26px
     img
         width: 576px
         height: 304px
+        @media screen and ( max-width: 1000px )
+            width: 100%
+            height: auto
+            padding-right: 0
 .page-cont
-    display: flex
-    justify-content: space-between
+    img
+        float: left
+        padding-right: 62px
     margin-bottom: 50px
     p 
         margin: 0
+    .p1
+        padding-top: 20px
+        padding-bottom: 46px
+    @media screen and ( max-width: 1000px )
+        display: flex
+        flex-direction: column
+        align-items: center
 .page-text
-    width: 586px
+    padding-right: 18px
     font-size: 18px
     line-height: 27px
     color: #666666
     font-weight: 500
-    align-self: center
-    p 
-        &:first-child
-            margin-bottom: 50px
+    @media screen and ( max-width: 1000px )
+        padding-right: 0
 .pagination
     .pag-list-news
         .arrow-left-2,

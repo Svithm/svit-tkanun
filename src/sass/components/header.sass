@@ -202,7 +202,7 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        @media screen and ( max-width: 892px )
+        @media screen and ( max-width: 902px )
             justify-content: center
 .fabric-catalog
     margin: 12px 0 12px 0
@@ -258,14 +258,10 @@
                 background-image: url(../img/basket-svg.svg)
     @media screen and ( max-width: 872px )
         padding-bottom: 10px
+        width: 430px
         .basket
-            padding-top: 8px
-    @media screen and ( max-width: 355px )
-        .basket    
-            a
-                padding-right: 24px
-                &::before
-                    display: none
+            padding: 8px 0 12px 0
+            text-align: center
 
 .search
     padding-top: 34px
@@ -285,7 +281,8 @@
             color: #fff
     @media screen and ( max-width: 872px )
         padding-top: 0
-    @media screen and ( max-width: 452px )
+        width: 100%
+    @media screen and ( max-width: 872px )
         form
             width: unset
 

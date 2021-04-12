@@ -17,14 +17,18 @@
 .card-content
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     a 
         display: inline-block
     p
         margin: 0
+    // @media screen and ( max-width: 1200px )
+    //     justify-content: center
 
 .card-img
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     width: 780px
 
 .card-main-img
@@ -38,6 +42,11 @@
     img
         width: 140px
         height: 110px
+    @media screen and ( max-width: 1200px )
+        padding-right: 10px
+    @media screen and ( max-width: 749px )
+        flex-direction: unset
+
 .card-haract
     display: flex
     flex-direction: column
@@ -56,6 +65,7 @@
 
     .product-cheking 
         justify-content: space-between
+    
 
 .card-number
     display: flex

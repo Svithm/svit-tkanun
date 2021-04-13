@@ -43,7 +43,9 @@ header.header
                 .search 
                     form(action="" method="POST") 
                         input(name="search" placeholder="Пошук" type="search")
-                        button.svg(type="submit")
+                        button(type="submit")
+                            svg
+                                use(xlink:href="#lupa")
                             
 .items-cart 
     .basket-wrraper 

@@ -12,7 +12,6 @@ let gulp = require("gulp"),
     cleanCSS = require("gulp-clean-css"),
     sourcemaps = require("gulp-sourcemaps"),
     pug = require("gulp-pug")
-    
 
 gulp.task("browser-sync", function(){
     browserSync({

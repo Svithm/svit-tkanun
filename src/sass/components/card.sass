@@ -18,25 +18,37 @@
     flex-wrap: wrap
     a 
         display: inline-block
+        
     p
         margin: 0
-    // @media screen and ( max-width: 1200px )
-    //     justify-content: center
+    @media screen and ( max-width: 1200px )
+        justify-content: center
 
 .card-img
     display: flex
     justify-content: space-between
     flex-wrap: wrap
     width: 780px
+    @media screen and ( max-width: 1189px )
+        padding-bottom: 20px
 
 .card-main-img
     img
         width: 580px
         height: 418px
+        @media screen and ( max-width: 749px )
+            padding-bottom: 10px
+            width: 100%
+            height: auto
 .card-aside-img
     display: flex
     flex-direction: column
     justify-content: space-between
+    p
+        @media screen and ( max-width: 749px )
+            padding-right: 10px
+            &:last-child
+                padding-right: 0
     img
         width: 140px
         height: 110px
@@ -44,6 +56,12 @@
         padding-right: 10px
     @media screen and ( max-width: 749px )
         flex-direction: unset
+        width: 100%
+        height: auto
+        padding-right: 0
+        img
+            width: 100%
+            height: auto
 
 .card-haract
     display: flex
@@ -63,17 +81,25 @@
 
     .product-cheking 
         justify-content: space-between
+        flex-wrap: wrap
+        @media screen and ( max-width: 370px )
+            justify-content: center
     
 
 .card-number
     display: flex
     align-items: center
+    @media screen and ( max-width: 370px )
+        padding-bottom: 20px
 
 .card-color 
     padding: 30px 0
     img
         width: 50px
         height: 50px
+        @media screen and ( max-width: 425px )
+            width: 100%
+            height: auto
 
 .color-row-2
     padding: 16px 0
@@ -81,6 +107,7 @@
 .color-row-1,
 .color-row-2,
 .color-row-3
+    display: flex
     a
         padding-right: 18px
 .color-row-1,
@@ -106,6 +133,12 @@
 
 .description
     margin-bottom: 44px
+    @media screen and ( max-width: 1189px )
+        width: 390px
+        margin: 0 auto
+        margin-bottom: 20px
+    @media screen and ( max-width: 410px )
+        width: unset
     
 .desc-content
     margin: 0

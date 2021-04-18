@@ -48,20 +48,23 @@
     padding-top: 35px
     a
         display: inline-block
-        padding-right: 6px
+        padding-right: 4px
         font-size: 14px
         letter-spacing: 1px
         color: #fff
         font-weight: 700
         text-decoration: none
         text-transform: uppercase
+        &:active
+            padding: 4px
+            border: 1px dashed #fff
     @media screen and ( max-width: 970px )
         padding-top: 14px
 .ukr
     padding: 4px
     border: 1px dashed #fff
 .rus
-        padding-left: 6px
+    padding-left: 5px
 .tel
     display: flex
     flex-direction: column
@@ -202,8 +205,7 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        @media screen and ( max-width: 902px )
-            justify-content: center
+        
 .fabric-catalog
     margin: 12px 0 12px 0
     a
@@ -224,19 +226,20 @@
             background-image: url(../img/cloth.svg)
             right: 15px
             top: 10px 
-    @media screen and ( max-width: 872px )
-        a
+        
+                
+        @media screen and ( max-width: 872px )
+            display: block
             padding: 5px 100px 5px 30px
             &::before
                 top: 2px
-    @media screen and ( max-width: 450px )
-        a
-            padding: 0 100px 0 30px
+        @media screen and ( max-width: 450px )
             &::before
                 top: 18px
+    @media screen and ( max-width: 872px )
+        width: 100%
 .cart
     display: flex
-    // padding-left: 20px
     .basket
         padding-top: 41px
         a
@@ -256,12 +259,20 @@
                 top: -7px
                 right: 30px
                 background-image: url(../img/basket-svg.svg)
+            &:hover::before
+                // box-shadow: 0 0 46px rgba(204,204,223,0.71)
+                background-image: url(../img/basket-svg-h.svg)
+
+            
     @media screen and ( max-width: 872px )
         padding-bottom: 10px
-        width: 430px
+        width: 100%
         .basket
-            padding: 8px 0 12px 0
+            padding: 0
             text-align: center
+            a
+                &::before
+                    top: 0
 
 .search
     padding-top: 34px
@@ -296,6 +307,7 @@
         border-left: 1px solid #fff
         background: transparent
         cursor: pointer
+        outline: none
         &:hover
             background: #fff
         &::before
@@ -324,6 +336,10 @@
         color: #fff
         font-weight: 700
         text-align: center
+        transition: all 0.3s ease
+        @media screen and ( max-width: 660px )
+            padding-right: 90px
+            padding-left: 10px
 
 
 .content-wrraper
@@ -355,7 +371,9 @@
     &::-webkit-scrollbar
         width: 7px
         background-color: #f9f9fd
-
+    @media screen and ( max-width: 850px )
+        flex-direction: column
+            
 .basket-desc
     height: 163px
     h4
@@ -371,11 +389,21 @@
         color: #4281a4
         font-weight: 500
         list-style: none
+    @media screen and ( max-width: 850px )
+        height: unset
+
+
 .col
     display: flex
     justify-content: space-between
     align-items: center
     width: 464px
+    .product-cheking
+        @media screen and ( max-width: 850px )
+            padding: 20px 0
+    @media screen and ( max-width: 850px )
+        flex-direction: column
+        margin-bottom: 10px
 
 .bin
     img
@@ -454,15 +482,28 @@
         text-align: center
     p 
         margin: 0
+    @media screen and ( max-width: 850px )
+        transform: translateX(0px)
+        justify-content: center
 
 .basket-bottom
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     align-items: center
     padding-bottom: 50px
+    @media screen and ( max-width: 850px )
+        padding: 0 10px
+        .place-order
+            transform: translateX(0)
+    @media screen and ( max-width: 684px )
+        justify-content: center
+        
 
 .turn-back
+    padding-bottom: 20px
     a
+        display: inline-block
         padding: 12px
         font-size: 14px
         letter-spacing: 0px
@@ -480,6 +521,8 @@
     transform: translateX(-100px)
     .col
         justify-content: center
+        @media screen and ( max-width: 684px )
+            width: 100%
     a
         display: inline-block
         padding: 14px 0
@@ -499,11 +542,22 @@
             color: #6ebd44
             background-color: #fff
             border: 2px solid #6ebd44
+        @media screen and ( max-width: 365px )
+            font-size: 20px
+            padding: 10px 0
+    @media screen and ( max-width: 684px )
+        width: 100%
 
 // оформлення замовлення
 
 .order
     display: none
+    @media screen and ( max-width: 660px )
+        .basket-title
+            padding-right: 90px
+            @media screen and ( max-width: 375px )
+                h2
+                    font-size: 32px
 
 .form-wrraper
     max-width: 980px
@@ -514,14 +568,28 @@
         a
             width: unset
             padding: 14px 70px
+            @media screen and ( max-width: 600px )
+                display: block
+            
+
+    @media screen and ( max-width: 1024px )
+        padding: 0 10px
 
 .forms
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
+    @media screen and ( max-width: 657px )
+        justify-content: center
+    @media screen and ( max-width: 320px )
+        span
+            padding-left: 30px
 
     .col
         width: 300px
         display: inline-block
+        @media screen and ( max-width: 657px )
+            width: 100%
 
 .name-form
     font-size: 30px

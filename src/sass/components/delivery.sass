@@ -13,7 +13,15 @@
             top: 10px
     .fabric-catalog
         a
-            padding: 14px 162px 14px 20px
+            padding: 14px 100px 14px 20px
+            @media screen and ( max-width: 872px )
+                &::before
+                    top: 10px
+    .search
+        button
+            &:hover::before
+                background-image: url(../img/dandruff-r.svg)
+
 .delivery-content
     p 
         margin: 0

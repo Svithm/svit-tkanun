@@ -55,24 +55,23 @@ header.header
                 p 
                     a(href="#")
                         img(src="img/cart-img.jpg", alt="фотографія тканини") 
-                .flex
-                    .basket-desc 
-                        h4 Атлас
-                        p   
-                            ul
-                                li Опис
-                                li Колір
-                                li Характеристики
-                    .col
-                        .basket-price 100 грн
-                        .product-cheking 
-                            button.basket-button.minus(type="submit")
-                            input.custom-input(type="text" placeholder="1" value="1")
-                            button.basket-button.plus(type="submit")
-                        .basket-price 100 грн
-                    .bin   
-                        a(href="#") 
-                            img(src="img/bin.svg", alt="видалити товар")
+                .basket-desc 
+                    h4 Атлас
+                    p   
+                        ul
+                            li Опис
+                            li Колір
+                            li Характеристики
+                .col
+                    .basket-price 100 грн
+                    .product-cheking 
+                        button.basket-button.minus(type="submit")
+                        input.custom-input(type="text" placeholder="1" value="1")
+                        button.basket-button.plus(type="submit")
+                    .basket-price 100 грн
+                .bin   
+                    a(href="#") 
+                        img(src="img/bin-1.svg", alt="видалити товар")
                 
             .basket-content
                 p 
@@ -94,7 +93,7 @@ header.header
                     .basket-price 100 грн
                 .bin   
                     a(href="#") 
-                        img(src="img/bin.svg", alt="видалити товар")
+                        img(src="img/bin-1.svg", alt="видалити товар")
                 
             .basket-content
                 p 
@@ -116,7 +115,7 @@ header.header
                     .basket-price 100 грн
                 .bin   
                     a(href="#") 
-                        img(src="img/bin.svg", alt="видалити товар")
+                        img(src="img/bin-1.svg", alt="видалити товар")
                 
             .order-price
                 .col
@@ -171,13 +170,16 @@ header.header
                             form(action='')
                                 p
                                     input.radio-knopka(id="cash" type="radio" name="knopka") 
-                                    label(for="cash") Готівкою при отриманні
+                                    label(for="cash") Готівкою при 
+                                        span отриманні
                                 p
                                     input.radio-knopka(id="bank" type="radio" name="knopka")
-                                    label(for="bank") Банківською карткою 
+                                    label(for="bank") Банківською 
+                                        span карткою 
                                 p
                                     input.radio-knopka(id="carta" type="radio" name="knopka")
-                                    label(for="carta") На картку Приватбанку
+                                    label(for="carta") На картку 
+                                        span Приватбанку
             .place-order
                 p
                     a(href="#") Оформити замовлення

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
 	<style>
 		tspan { white-space:pre }
-		.shp0 { fill: #fff } 
+		.shp0 { fill: #30d5c8 } 
 	</style>
 	<g id="Layer">
 		<path id="Layer" class="shp0" d="M6.42 17.22C4 21.19 7.77 22.54 7.77 22.54L26.71 22.54L26.71 18.96L9.79 18.96L11.05 16.65L22.94 16.65L29.6 5.42L29.5 3.39L6.7 3.39L5.64 0.2L0.32 0.2L0.32 2.72L3.51 2.72L8.53 14.32L6.42 17.22Z" />

@@ -97,25 +97,20 @@
     img
         width: 50px
         height: 50px
-        @media screen and ( max-width: 425px )
-            width: 100%
-            height: auto
-
-.color-row-2
-    padding: 16px 0
-
-.color-row-1,
-.color-row-2,
-.color-row-3
-    display: flex
-    a
-        padding-right: 18px
-.color-row-1,
-.color-row-2,
-.color-row-3
-    a
-        &:last-child
-            padding-right: 0
+        // @media screen and ( max-width: 425px )
+        //     width: 100%
+        //     height: auto
+    .color-row-1
+    
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+        width: 420px
+        a
+            padding-right: 15px
+            padding-bottom: 15px
+        @media screen and ( max-width: 800px )
+            width: unset
 
 .card-button
     padding: 8px 12px
@@ -137,7 +132,7 @@
         width: 390px
         margin: 0 auto
         margin-bottom: 20px
-    @media screen and ( max-width: 410px )
+    @media screen and ( max-width: 800px )
         width: unset
     
 .desc-content

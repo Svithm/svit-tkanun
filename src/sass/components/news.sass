@@ -12,6 +12,9 @@
             background-image: url(../img/news.svg)
             right: 15px
             top: 10px
+        @media screen and ( max-width: 872px )
+            &::before
+                top: 10px
     p 
         margin: 0
     span
@@ -25,6 +28,12 @@
                 display: block
                 &::before
                     top: 10px
+
+    .search
+        button
+            &:hover::before
+                background-image: url(../img/dandruff-y.svg)
+
 
 .news-content
     display: flex

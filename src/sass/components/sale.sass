@@ -1,13 +1,28 @@
 .orange
     background-color: #ffcc02
+    button
+        &:hover::before
+            background-image: url(../img/dandruff-o.svg)
 
 .fabric-catalog-orange
-    .search
-        button
-            &:hover::before
-                background-image: url(../img/dandruff-o.svg)
+    a
+        &::before
+            width: 64px
+            height: 64px
+            top: 4px
+            right: 0
+            background-image: url(../img/sale.svg)
+        @media screen and ( max-width: 872px )
+            padding: 5px 100px 5px 10px
+            &::before
+                top: -5px
+        @media screen and ( max-width: 450px )
+            &::before
+                top: -5px
     &::before
         background-image: url(/img/sale.svg)
+    
+             
 
 .discount
     position: relative
@@ -24,10 +39,6 @@
         font-size: 20px
         letter-spacing: 1px
         font-weight: 600
-.product-list
-    .button-orange
-        border: 3px solid #ffcc02
-        background-color: #ffcc02
 .pagination
     .pag-list-orange
         a

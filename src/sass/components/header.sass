@@ -259,10 +259,9 @@
                 top: -7px
                 right: 30px
                 background-image: url(../img/basket-svg.svg)
+                transition: all .3s ease
             &:hover::before
-                // box-shadow: 0 0 46px rgba(204,204,223,0.71)
-                background-image: url(../img/basket-svg-h.svg)
-
+                transform: scale(1.2)
             
     @media screen and ( max-width: 872px )
         padding-bottom: 10px
@@ -323,7 +322,7 @@
                 
 // корзина            
 .items-cart 
-    // display: none
+    display: none
 
 .basket-title
     position: relative
@@ -413,6 +412,9 @@
         height: 29px
     a
         display: inline-block
+        transition: all .3s ease
+        &:hover
+            transform: scale(1.2)
 
 .basket-price
     font-size: 30px

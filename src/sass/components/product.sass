@@ -1,3 +1,252 @@
+.filter 
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 284px
+    padding: 13px 23px 
+    box-sizing: border-box     
+    margin-bottom: 30px
+    & > p 
+        font-size: 18px
+        font-weight: 700
+        color: #4281a4 
+        user-select: none
+    p
+        font-family: "Inter"
+        letter-spacing: 1px
+        margin: 0
+    form.filter-content 
+        display: none
+        position: absolute
+        z-index: 5
+        top: 100%
+        left: -3px
+        width: calc( 100% + 6px ) 
+        padding: 0
+        box-sizing: border-box
+        border: inherit
+        border-top: none
+        background-color: #fff
+    .wrap-for-click 
+        padding: 26px
+        padding-top: 0
+
+        input 
+            visibility: hidden
+            width: 16px
+            height: 16px
+            margin: 0
+            margin-left: 7px
+        label
+            position: relative
+            font-size: 16px
+            font-weight: 500
+            line-height: 24px
+            color: #222
+            padding-left: 10px
+            &::before
+                content: ''
+                position: absolute
+                top: 50%
+                left: -26px
+                transform: translateY(-50%)
+                width: 12px
+                height: 12px
+        input:checked + label:before 
+            background-color: #ef4a23 
+    .active-filter-content 
+        display: block!important
+
+@media screen and ( max-width: 1200px )
+    .filter 
+        margin: 0 10px 30px
+    
+.flt-maker 
+    border: 3px solid #ef4a23 
+    label:before 
+        border: 3px solid #ef4a23 
+
+.flt-color 
+    border: 3px solid #d0db2a 
+    .active-filter-content  
+        .wrap-for-click 
+            display: flex!important 
+            justify-content: space-between  
+            flex-wrap: wrap 
+            padding: 17px 34px
+            padding-top: 0
+        p 
+            position: relative
+            margin-bottom: 9px
+        p, 
+        p input,
+        p label     
+            display: inline-block
+            width: 61px
+            height: 61px
+            label 
+                position: absolute
+                top: 0
+                left: 0
+                padding: 0
+                &::before
+                    top: 0
+                    left: 0
+                    width: 61px
+                    height: 61px
+                    border: none 
+                    transform: translate(0, 0)
+            input:checked + label:before 
+                background-color: rgba(0, 0, 0, .3)
+            input:checked + label:after
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                height: 8px
+                width: 18px
+                border: 3px solid #fff
+                border-radius: 2px
+                border-top: none
+                border-right: none
+                transform: rotate(-45deg)  translateY(-100%)
+
+#color1 + label
+    background-image: linear-gradient(90deg, #972105 0%, #ef4040 100%) 
+
+#color2 + label
+    background-image: linear-gradient(90deg, #56077c 0%, #bc62fc 100%)
+
+#color3 + label
+    background-image: linear-gradient(90deg, #b11996 0%, #fd85f8 100%)
+
+#color4 + label
+    background-image: linear-gradient(90deg, #0332fa 0%, #5cd6fe 100%)
+
+#color5 + label
+    background-image: linear-gradient(90deg, #065c06 0%, #1ce42f 100%)
+
+#color6 + label
+    background-image: linear-gradient(90deg, #bc9b06 0%, #e7f514 100%)
+
+#color7 + label
+    background-image: linear-gradient(90deg, #b79244 0%, #d2cb82 100%)
+
+#color8 + label
+    background-image: linear-gradient(90deg, #f97703 0%, #fdc35c 100%)
+
+#color9 + label
+    background-image: linear-gradient(90deg, #522d09 0%, #b06402 100%) 
+
+#color10 + label
+    background-image: linear-gradient(90deg, #000000 0%, #555555 100%)
+
+#color11 + label
+    background-image: linear-gradient(90deg, #555555 0%, #a9a9a9 100%)
+
+#color12 + label
+    background-image: linear-gradient(90deg, #a9a9a9 0%, #ffffff 100%)
+    
+.flt-fabric 
+    border: 3px solid #ffcc02  
+    label:before 
+        border: 3px solid #ffcc02
+    input:checked + label:before 
+        background-color: #ffcc02!important
+
+.flt-price 
+    border: 3px solid #4281a4 
+    .wrap-for-click 
+        padding: 15px 30px 20px
+        .price-range-wrap 
+            width: 70%
+            margin: 0 auto 
+            text-align: center
+            label:before 
+                display: none
+                span 
+                    width: 20%
+            label, p, span 
+                display: inline-block
+                padding: 0
+                margin-bottom: 15px
+                input 
+                    visibility: visible 
+                    box-sizing: border-box
+                    margin: 0
+                    &[type=number]
+                        width: 100%
+                        height: auto
+                        font-size: 14px
+                        letter-spacing: 1px
+                        font-weight: 700
+                        font-family: "Inter"
+                        text-align: center
+                        color: #000
+                        padding: 3px
+                        border: 2px solid #4281a4
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button 
+                            display: none
+                    &[type=range]
+                        width: 100%
+            span 
+                font-size: 21px
+            input[type=range]
+                -webkit-appearance: none
+                -moz-appearance: none
+                appearance: none
+                &::-webkit-slider-runnable-track
+                    height: 2px
+                    background-color: #4281a4
+                &::-webkit-slider-thumb
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    appearance: none
+                    position: relative
+                    z-index: 6
+                    border-radius: 50%
+                    height: 9px
+                    width: 9px
+                    background-color: #4281a4
+                    transform: translateY(-3.5px)
+                    cursor: pointer
+                    transition: transform .3s 
+                    &:hover 
+                        transform: scale(1.5) translateY(-2px)
+
+.input-number-wrap 
+    width: 40%
+
+.range-line 
+    position: relative 
+    width: 100%
+    input 
+        position: absolute
+        top: 0
+        left: 0
+
+.filter-arrow
+    position: relative
+    display: inline-block
+    width: 20px
+    height: 20px
+    background-color: #4281a4
+    border-radius: 2px
+    &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 8px
+        height: 8px
+        border: 2px solid #fff
+        border-top: none
+        border-right: none
+        border-radius: 1px
+        transform: translate(-50%, -75%) rotate(-45deg)
+    
 .product
     ul
         margin: 0
@@ -7,7 +256,8 @@
             margin-bottom: 10px
             width: 284px
             height: 330px
-.product-list
+.product-list,
+.product-filters 
     display: flex
     justify-content: space-between
     flex-wrap: wrap

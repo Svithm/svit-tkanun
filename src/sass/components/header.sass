@@ -144,6 +144,7 @@
         width: unset
         padding: 0 0 20px 30px
 .burger
+    position: relative
     display: none
     padding: 4px
     width: 40px
@@ -158,18 +159,37 @@
         height: 3px
         width: 80%
         background-color: #fff
-    @media screen and ( max-width: 1200px )
+        opacity: 1
+        transition: all .3s
+    @media screen and ( max-width: 600px )
         display: block
         margin-bottom: 10px
+        &.burger-toggle 
+            span 
+                position: absolute 
+                top: 50%
+                left: 50%
+                margin: 0
+                &:nth-child(1)
+                    transform:  translate(-50%, -50%) rotate(45deg)
+                &:nth-child(2)
+                    opacity: 0
+                &:nth-child(3)
+                    transform: translate(-50%, -50%) rotate(-45deg)
+
 .menu
-    margin-bottom: 28px
+    margin: 20px 0
+    transition: all .3s ease
+    transform-origin: top
     ul
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
         list-style: none
         padding-left: 0
-        margin: 0
+        margin: 0 -10px
         li
+            margin: 10px
             &:nth-child(2) a 
                 background-color: #d0db2a
             &:nth-child(3) a 
@@ -195,12 +215,23 @@
             transition: all .4s ease
             &:hover
                 transform: scale(1.06)
-    @media screen and ( max-width: 1200px )
-        display: none
+        @media screen and ( max-width: 1200px )
+            justify-content: center
+@media screen and ( max-width: 600px )
+    .menu 
+        height: 345px
+        ul 
+            flex-direction: column
+            align-items: center
+    .burger-menu-toggle
+        margin: 0
+        height: 0
+        transform: scaleY(0)
+        overflow: hidden
         
 .header-bottom-line
     background-color: #6ebd44
-    margin-bottom: 100px
+    margin-bottom: 30px
     .wrraper
         display: flex
         justify-content: space-between
@@ -319,13 +350,37 @@
             background-image: url(../img/dandruff.svg)
         &:hover::before
             background-image: url(../img/dandruff-g.svg) 
-                
-// корзина            
+
+// попапи 
+
+.active-popup 
+    display: block!important
+                    
+
+.popup-bg,
 .items-cart 
     display: none
 
+.popup 
+    position: absolute
+    left: 50%
+    top: 50%
+    max-height: 90vh
+    height: 100%
+    width: 80%
+    transform: translate(-50%, -50%)
+    overflow: hidden
+    @media screen and ( max-width: 940px )
+        width: 90%
+
+// корзина            
+
+.basket-wrraper  
+    height: 100%
+
 .basket-title
     position: relative
+    max-height: 20%
     background-color: #6ebd44
     h2
         margin: 0
@@ -337,24 +392,41 @@
         text-align: center
         transition: all 0.3s ease
         @media screen and ( max-width: 660px )
-            padding-right: 90px
+            font-size: 30px
+            padding-right: 20px
             padding-left: 10px
 
 
-.content-wrraper
+.content-wrraper,
+.form-wrraper
+    width: 100%
+    height: 100%
+    padding: 10px
+    background-color: #fff
+    box-sizing: border-box
+    overflow: hidden
+    @media screen and ( max-width: 940px )
+        padding: 10px 40px
+    @media screen and ( max-width: 655px )
+        padding: 10px 15px
+
+.product-wrap 
+    height: 40%
+    overflow-y: scroll
+    margin: 10px 0
     &::-webkit-scrollbar
         padding: 1px
         width: 6px
-        background: transperent
-        border-left: 1px solid #6ebd44
-        border-right: 1px solid #6ebd44
+        background: transparent
+        border: 1px solid #6ebd44
+        border-radius: 3px
     &::-webkit-scrollbar-thumb
         border-radius: 3px
         background-color: #6ebd44
-    overflow-y: scroll
-    width: 100%
-    height: 600px
-    padding: 10px
+    @media screen and ( max-width: 940px ) 
+        height: 35%
+    @media screen and ( max-width: 940px ) 
+        height: 30%
 
 .basket-content
     display: flex
@@ -372,8 +444,44 @@
     &::-webkit-scrollbar
         width: 7px
         background-color: #f9f9fd
-    @media screen and ( max-width: 850px )
-        flex-direction: column
+    @media screen and ( max-width: 655px ) 
+        flex-wrap: wrap
+        padding: 0 5px
+        margin-bottom: 20px
+        a, p 
+            display: block
+            width: 100%
+        img 
+            width: 100%
+            object-fit: cover
+        .bin 
+            a 
+                display: inline-block
+            img 
+                width: 27px
+        .info-wrap 
+            flex-wrap: wrap
+            padding: 0
+
+.info-wrap 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    padding: 0 15px
+    box-sizing: border-box
+    @media screen and ( max-width: 450px ) 
+        // justify-content: center
+        .basket-desc 
+            width: 100%
+            text-align: center
+            ul
+                display: flex
+                justify-content: center
+                li 
+                    margin: 0 10px
+        .col 
+            margin: 0
             
 .basket-desc
     height: 163px
@@ -393,18 +501,20 @@
     @media screen and ( max-width: 850px )
         height: unset
 
-
 .col
     display: flex
     justify-content: space-between
     align-items: center
     width: 464px
+    margin: 0 15px
     .product-cheking
-        @media screen and ( max-width: 850px )
-            padding: 20px 0
-    @media screen and ( max-width: 850px )
+    @media screen and ( max-width: 1200px )
         flex-direction: column
-        margin-bottom: 10px
+        width: auto
+        .product-cheking  
+            margin: 10px 0
+        .basket-price:last-child 
+            display: none
 
 .bin
     img
@@ -470,6 +580,9 @@
     color: #548bab
     text-align: center
     outline: none
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button 
+        display: none
 
 .order-price
     display: flex
@@ -486,9 +599,22 @@
         text-align: center
     p 
         margin: 0
-    @media screen and ( max-width: 850px )
+    @media screen and ( max-width: 1200px ) 
+        .col 
+            flex-direction: row
+            h4 
+                margin-right: 10px
+    @media screen and ( max-width: 545px ) 
+        .col 
+            justify-content: center
+            flex-wrap: wrap
+    @media screen and ( max-width: 940px )  
         transform: translateX(0px)
         justify-content: center
+    @media screen and ( max-width: 850px )
+        padding: 20px 0
+    @media screen and ( max-width: 470px )
+        padding: 10px 0
 
 .basket-bottom
     display: flex
@@ -496,16 +622,17 @@
     flex-wrap: wrap
     align-items: center
     padding-bottom: 50px
-    @media screen and ( max-width: 850px )
+    @media screen and ( max-width: 1200px )
         padding: 0 10px
         .place-order
             transform: translateX(0)
-    @media screen and ( max-width: 684px )
+    @media screen and ( max-width: 850px )
         justify-content: center
-        
+        flex-wrap: wrap-reverse
+        .col
+            margin-bottom: 10px
 
 .turn-back
-    padding-bottom: 20px
     a
         display: inline-block
         padding: 12px
@@ -527,6 +654,8 @@
         justify-content: center
         @media screen and ( max-width: 684px )
             width: 100%
+            margin: 0
+            margin-bottom: 10px
     a
         display: inline-block
         padding: 14px 0
@@ -564,8 +693,7 @@
                     font-size: 32px
 
 .form-wrraper
-    max-width: 980px
-    margin: 0 auto
+    padding: 50px 60px
     .place-order
         transform: translate(0)
         text-align: center
@@ -579,16 +707,33 @@
     @media screen and ( max-width: 1024px )
         padding: 0 10px
 
-.forms
+.forms 
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    height: 65% 
+    overflow-y: scroll
+    &::-webkit-scrollbar
+        padding: 1px
+        padding-left: 30px
+        width: 6px
+        background: transparent
+        border: 1px solid #6ebd44
+        border-radius: 3px
+    &::-webkit-scrollbar-thumb
+        border-radius: 3px
+        background-color: #6ebd44
     @media screen and ( max-width: 657px )
         justify-content: center
+    @media screen and ( max-width: 590px )
+        height: 55%
+        form.col 
+            margin: 0
     @media screen and ( max-width: 320px )
         span
             padding-left: 30px
-
+    & > div 
+        padding: 0 15px
     .col
         width: 300px
         display: inline-block

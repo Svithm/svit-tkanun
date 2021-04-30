@@ -1,6 +1,137 @@
 .section 
     .wrraper
         .product
+            .product-filters 
+                .filter.flt-maker
+                    p Виробник
+                    span.filter-arrow
+                    form.filter-content(action="#")
+                        .wrap-for-click 
+                            p
+                                input#firm1(name="firm1" type="checkbox")
+                                label(for="firm1") Kristal Tul
+                            p
+                                input#firm2(name="firm2" type="checkbox")
+                                label(for="firm2") Goldline
+                            p
+                                input#firm3(name="firm3" type="checkbox")
+                                label(for="firm3") Diamond
+                            p
+                                input#firm4(name="firm4" type="checkbox")
+                                label(for="firm4") Bon Mariage
+                            p
+                                input#firm5(name="firm5" type="checkbox")
+                                label(for="firm5") Sona Textiles
+                            p
+                                input#firm6(name="firm6" type="checkbox")
+                                label(for="firm6") Class 4*4
+                            p
+                                input#firm7(name="firm7" type="checkbox")
+                                label(for="firm7") New Sample
+                            p
+                                input#firm8(name="firm8" type="checkbox")
+                                label(for="firm8") Moda Italy
+                            p
+                                input#firm9(name="firm9" type="checkbox")
+                                label(for="firm9") Ace Tex
+                            p
+                                input#firm10(name="firm10" type="checkbox")
+                                label(for="firm10") Bobbytex
+                            p
+                                input#firm11(name="firm11" type="checkbox")
+                                label(for="firm11") Babytex
+                            p
+                                input#firm12(name="firm12" type="checkbox")
+                                label(for="firm12") Modaer
+                            p
+                                input#firm13(name="firm13" type="checkbox")
+                                label(for="firm13") Alse Tekstil
+                .filter.flt-color
+                    p Колір
+                    span.filter-arrow
+                    form.filter-content(action="#") 
+                        .wrap-for-click 
+                            p
+                                input#color1(name="color1" type="checkbox")
+                                label(for="color1")
+                            p
+                                input#color2(name="color2" type="checkbox")
+                                label(for="color2")
+                            p
+                                input#color3(name="color3" type="checkbox")
+                                label(for="color3")
+                            p
+                                input#color4(name="color4" type="checkbox")
+                                label(for="color4")
+                            p
+                                input#color5(name="color5" type="checkbox")
+                                label(for="color5")
+                            p
+                                input#color6(name="color6" type="checkbox")
+                                label(for="color6") 
+                            p
+                                input#color7(name="color7" type="checkbox")
+                                label(for="color7")
+                            p
+                                input#color8(name="color8" type="checkbox")
+                                label(for="color8")
+                            p
+                                input#color9(name="color9" type="checkbox")
+                                label(for="color9")
+                            p
+                                input#color10(name="color10" type="checkbox")
+                                label(for="color10")
+                            p
+                                input#color11(name="color11" type="checkbox")
+                                label(for="color11")
+                            p
+                                input#color12(name="color12" type="checkbox")
+                                label(for="color12")
+                .filter.flt-fabric
+                    p Тканина
+                    span.filter-arrow 
+                    form.filter-content(action="#")
+                        .wrap-for-click 
+                            p
+                                input#fabric1(name="fabric1" type="checkbox")
+                                label(for="fabric1") Ангора
+                            p
+                                input#fabric2(name="fabric2" type="checkbox")
+                                label(for="fabric2") Атлас
+                            p
+                                input#fabric3(name="fabric3" type="checkbox")
+                                label(for="fabric3") Велюр
+                            p
+                                input#fabric4(name="fabric4" type="checkbox")
+                                label(for="fabric4") Джинс
+                            p
+                                input#fabric5(name="fabric5" type="checkbox")
+                                label(for="fabric5") Шкіра
+                            p
+                                input#fabric6(name="fabric6" type="checkbox")
+                                label(for="fabric6") Віскоза
+                            p
+                                input#fabric7(name="fabric7" type="checkbox")
+                                label(for="fabric7") Замш
+                            p
+                                input#fabric8(name="fabric8" type="checkbox")
+                                label(for="fabric8") Льон
+                .filter.flt-price
+                    p Ціна
+                    span.filter-arrow 
+                    form.filter-content(action="#")
+                        .wrap-for-click 
+                            .price-range-wrap 
+                                label.input-number-wrap.priceNumberStart 
+                                    input#priceNumberStart(type="number" name="min-price" value="100")
+                                span &nbsp;-&nbsp;
+                                label.input-number-wrap.priceNumberEnd 
+                                    input#priceNumberEnd(type="number" name="max-price" value="500")
+                                p.range-line 
+                                    input#priceStart(type="range", name="priceStart" min="100", max="500" value="0")
+                                    label(for="priceStart")
+                                    input#priceFinish(type="range", name="priceFinish" min="100", max="500" value="500")
+                                    label(for="priceFinish")
             ul.product-list
                 li.indent
                     figure

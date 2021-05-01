@@ -1,5 +1,10 @@
 .header
     margin: 0 auto
+input[type='search']::-webkit-search-decoration, 
+input[type='search']::-webkit-search-cancel-button, 
+input[type='search']::-webkit-search-results-button, 
+input[type='search']::-webkit-search-results-decoration 
+	display: none
 .top-line
     margin-top: 35px
     margin-bottom: 58px
@@ -124,10 +129,11 @@
     text-align: center
     @media screen and ( max-width: 1200px )
         text-align: right
-    a
+    address
         display: inline-block
         position: relative
         font-size: 14px
+        font-style: normal
         text-decoration: none
         letter-spacing: 1px
         color: #fff

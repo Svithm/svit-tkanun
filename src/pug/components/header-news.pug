@@ -16,7 +16,11 @@ header.header
                 .location
                     a(href="#") м.Хмельницький вул. Геологів 8  
     .wrraper
-        .menu 
+        .burger 
+            span 
+            span 
+            span 
+        .menu.burger-menu-toggle  
             ul 
                 li
                     a(href="index.html") Каталог
@@ -34,8 +38,152 @@ header.header
                 a(href="#") Новини
             .cart
                 .basket 
-                    a(href="#") 1200 грн
+                    a.js-basket-popup(href="#") 1200 грн
                 .search 
                     form(action="" method="POST") 
                         input(name="search" placeholder="Пошук" type="search")
                         button(type="submit")
+.popup-bg                            
+    .items-cart.popup 
+        .basket-wrraper 
+            .basket-title 
+                h2 Товари в кошику
+                p.close 
+                    a(href="#") 
+            .content-wrraper
+                .product-wrap
+                    .basket-content
+                        p 
+                            a(href="#")
+                                img(src="img/cart-img.jpg", alt="фотографія тканини") 
+                        .info-wrap    
+                            .basket-desc 
+                                h4 Атлас
+                                p   
+                                    ul
+                                        li Опис
+                                        li Колір
+                                        li Характеристики
+                            .col
+                                .basket-price <span class="product-price">100</span> грн
+                                .product-cheking 
+                                    button.basket-button.minus(type="submit")
+                                    input.custom-input(type="number" value="1")
+                                    button.basket-button.plus(type="submit")
+                                .basket-price 100 грн
+                            .bin   
+                                a(href="#") 
+                                    img(src="img/bin-1.svg", alt="видалити товар")
+                        
+                    .basket-content
+                        p 
+                            a(href="#")
+                                img(src="img/cart-img.jpg", alt="фотографія тканини") 
+                        .info-wrap    
+                            .basket-desc 
+                                h4 Атлас
+                                p   
+                                    ul
+                                        li Опис
+                                        li Колір
+                                        li Характеристики
+                            .col
+                                .basket-price <span class="product-price">200</span> грн
+                                .product-cheking 
+                                    button.basket-button.minus(type="submit")
+                                    input.custom-input(type="number" value="1")
+                                    button.basket-button.plus(type="submit")
+                                .basket-price 200 грн
+                            .bin   
+                                a(href="#") 
+                                    img(src="img/bin-1.svg", alt="видалити товар")
+                        
+                    .basket-content
+                        p 
+                            a(href="#")
+                                img(src="img/cart-img.jpg", alt="фотографія тканини") 
+                        .info-wrap    
+                            .basket-desc 
+                                h4 Атлас
+                                p   
+                                    ul
+                                        li Опис
+                                        li Колір
+                                        li Характеристики
+                            .col
+                                .basket-price <span class="product-price">300</span> грн
+                                .product-cheking 
+                                    button.basket-button.minus(type="submit")
+                                    input.custom-input(type="number" value="1")
+                                    button.basket-button.plus(type="submit")
+                                .basket-price 300 грн
+                            .bin   
+                                a(href="#") 
+                                    img(src="img/bin-1.svg", alt="видалити товар")
+                    
+                .order-price
+                    .col
+                        h4 Сума замовлення
+                        .basket-price.total-price 300 грн
+                .basket-bottom 
+                    .turn-back
+                        a(href="index.html") Повернутися до покупок
+                    .place-order
+                        .col
+                            a.js-order-button(href="#") Оформити замовлення 
+    .order.popup 
+        .basket-wrraper 
+            .basket-title 
+                h2 Оформлення замовлення
+                p.close 
+                    a(href="#")
+            .form-wrraper
+                .forms
+                    div
+                        .form1
+                            p.name-form 1. Контактні дані
+                                form.col(action='')
+                                    input.input(type='text' placeholder="ПІБ")
+                                    input.input(type='tel' placeholder='Номер телефону')
+                        .form2 
+                            p.name-form 2. Доставка
+                                form(action='')
+                                    p
+                                        input.radio-knopka(id="nova-poshta" type="radio" name="knopka") 
+                                        label(for="nova-poshta") Нова Пошта
+                                    p
+                                        input.radio-knopka(id="ukr-poshta" type="radio" name="knopka")
+                                        label(for="ukr-poshta") Укрпошта
+                                    p
+                                        input.radio-knopka(id="justin" type="radio" name="knopka")
+                                        label(for="justin") Justin
+                                    p
+                                        input.radio-knopka(id="delivery" type="radio" name="knopka")
+                                        label(for="delivery") Delivery
+                                    p
+                                        input.radio-knopka(id="gunsel" type="radio" name="knopka")
+                                        label(for="gunsel") Günsel
+                    div 
+                        .form3
+                            p.name-form 3. Адреса доставки
+                                form.col(action='')
+                                    input.input(type='text' placeholder="Місто")
+                                    input.input(type='tel' placeholder='№ відділення') 
+                        .form4 
+                            p.name-form 4. Тип оплати
+                                form(action='')
+                                    p
+                                        input.radio-knopka(id="cash" type="radio" name="knopka") 
+                                        label(for="cash") Готівкою при 
+                                            span отриманні
+                                    p
+                                        input.radio-knopka(id="bank" type="radio" name="knopka")
+                                        label(for="bank") Банківською 
+                                            span карткою 
+                                    p
+                                        input.radio-knopka(id="carta" type="radio" name="knopka")
+                                        label(for="carta") На картку 
+                                            span Приватбанку
+                .place-order
+                    p
+                        a(href="#") Оформити замовлення                

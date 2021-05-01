@@ -68,12 +68,9 @@ gulp.task("css", function(){
 gulp.task("js", function(){
     return gulp
     .src([
-        "src/**/*.js",
+        "src/js/*.js",
     ])
-    .pipe(sourcemaps.init())
     .pipe(uglify())
-    .pipe(concat("scripts.js"))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest("dist/js"))
     .pipe(browserSync.reload({
         stream: true

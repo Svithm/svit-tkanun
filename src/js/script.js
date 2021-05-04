@@ -63,6 +63,7 @@ burger.onclick = function (event){
 }
 
 //product +/- 
+basketFunctional()
 
 function basketFunctional (){
   let product = document.querySelectorAll(".basket-content"),
@@ -72,7 +73,6 @@ function basketFunctional (){
       productCount = document.querySelectorAll(".custom-input"),
       totalPrice = document.querySelector(".total-price")
   
-  console.log(productPrice)
   for(let i = 0; i < product.length; i++){
     product[i].setAttribute("data-pr-count", [i]) 
   }
@@ -110,5 +110,22 @@ function basketFunctional (){
       price += parseInt(productCount[i].value) * parseInt(productPrice[i].textContent)
     }
     totalPrice.textContent = `${price} грн`
+  }
+}
+
+let cardPlus = document.querySelector(".card.plus"),
+    cardMinus = document.querySelector(".card.minus"),
+    cardProductCount = document.querySelector(".card.custom-input")
+
+cardPlus.onclick = cardPlusClick
+cardMinus.onclick = cardMinusClick
+
+function cardPlusClick (){
+  cardProductCount.value = parseInt(cardProductCount.value) + 1
+}
+
+function cardMinusClick (){
+  if(cardProductCount.value > 0){
+    cardProductCount.value = parseInt(cardProductCount.value) - 1
   }
 }

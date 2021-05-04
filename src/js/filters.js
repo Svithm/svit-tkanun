@@ -7,6 +7,11 @@ filters.forEach((e) => {
 })
 
 function filterOpen (event){
+  for(let i = 0; i < filters.length; i++){
+    if(filters[i] != this){
+      filters[i].querySelector(".filter-content").classList.remove("active-filter-content")
+    }
+  }
   if(event.target == this){
     filtersContent = this.querySelector(".filter-content")
     filtersContent.classList.toggle("active-filter-content") 
